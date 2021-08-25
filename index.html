@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="location">
+      <h1 class="location-timezone">Timezone</h1>
+      <p class="weather-img">Icon</p>
+    </div>
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree"></h2>
+        <!-- <span class="temperature-celsius"></span> -->
+      </div>
+      <div class="temperature-description"></div>
+    </div>
+
+    <section class="section section-center content">
+        <h3>Enter City Below</h3>
+        <div class="form-control search">
+          <input type="text" name="search" class="form-input search-bar" />
+          <button type="submit" class="submit-btn">Get Weather</button>
+        </div>
+      <div class="result"></div>
+        <h1 class="desc"></h1>
+      </div>
+      <div class="weather loading">
+      <h2 class="city"></h2>
+      <h1 class="temp"></h1>
+      <div class="flex">
+        <img src="" alt="" class="icon" />
+        <div class="description"></div>
+      </div>
+      <div class="humidity"></div>
+      <div class="wind"></div>
+    </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

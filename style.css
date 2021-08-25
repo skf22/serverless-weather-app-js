@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Recursive:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  background: rgb(22, 77, 113);
+  background: linear-gradient(
+    120deg,
+    rgba(22, 77, 113, 1) 47%,
+    rgba(84, 84, 212, 1) 100%
+  );
+  font-family: sans-serif;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.degree-section h2 {
+  font-size: 3rem;
+}
+
+.desc {
+  font-size: 2rem;
+  color: black;
+  z-index: 10;
+}
+
+.home-btn {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0.5em;
+  background: brown;
+  text-decoration: none;
+  margin-bottom: 2.5em;
+  border: 2px solid #fff;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.home-btn:hover {
+  background: rgb(131, 62, 196);
+  color: rgb(56, 138, 192);
+}
+
+.wind {
+  margin-bottom: 2em;
+}
